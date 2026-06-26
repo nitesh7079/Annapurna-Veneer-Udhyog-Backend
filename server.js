@@ -30,6 +30,10 @@ app.get("/api/health", (req, res) => {
 const productRoutes = require("./routes/productRoutes");
 app.use("/api", productRoutes);
 
+// ── Testimonials (intern project) ──
+const testimonialRoutes = require("./routes/testimonialRoutes");
+app.use("/api/testimonials", testimonialRoutes);
+
 // ── ERP routes ──
 const authRoutes = require("./routes/authRoutes");
 const companyRoutes = require("./routes/companyRoutes");
